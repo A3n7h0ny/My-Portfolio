@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>Anthony's Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Replace the existing Google Fonts link with this simplified version -->
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+<!-- Preload Font Awesome -->
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
+
+<!-- Preload Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Barcode+39&family=Michroma&family=Monoton&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+    <!-- Replace the existing Google Fonts link with this simplified version -->
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</noscript>
+<link rel="stylesheet" href="Styles/home.css">
+
+</head>
+<body>
+
+<!-- Splash screen -->
+<div id="splash">    
+  <p class="nap"><span> <i class="fa fa-angle-left fa-xs"></i></span>Hello<span> there/<i class="fa fa-angle-right fa-xs"></i></span></p> 
+  
+</div>
+
+
+
+<div page="page-container">
+         <nav>
+        <div class="logo">    
+          <h1 class="name"><span class="animation"><i class="fa-solid fa-crown fa-sm"></i>AB.<span></h1>
+        </div>
+    
+        <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        <ul> 
+            <li data-priority="1"><a href="#home" class="nav-link" data-section="home">Home</a></li>
+            <li data-priority="2"><a href="#AB" class="nav-link" data-section="about">About</a></li>
+            <li data-priority="2"><a href="#MS" class="nav-link" data-section="skills">Skills</a></li>         
+            <li data-priority="3"><a href="#PR" class="nav-link" data-section="projects">Projects</a></li>
+            <li data-priority="4"><a href="#JY" class="nav-link" data-section="journey">Journey</a></li>
+            <li data-priority="4"><a href="#CX" class="nav-link" data-section="contact">Contact</a></li>
+                <li class="theme-toggle-item">
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                </li>
+        </ul> 
+        
+      </nav>
+
+
+    <header id="home">
+        <div class="split-screen">
+        <div class="content-side">
+            <div class="header-content">
+                <div class="Vertical-line">
+                    <h1>Hi, I'm </h1>
+                    <h2>
+                       <span class="name-animation"><span class="animation">Anthony Bompetshi</span></span><br> 
+                    </h2>
+                    <h3>
+                        <span>Tech Enthusiast & Aspiring Developer</span>
+                    </h3>
+                </div>
+                <P>An aspiring full stack developer with a passion for creating clean and user-friendly websites, software and problem solve.
+                     
+                </P>
+                <div class="top-button">
+                <a href="#CX"><button class="button-1"><i class="fa-solid fa-handshake  "></i>  Hire Me</button></a>
+                <a href="resume/cv.pdf" download="Anthony_Bompetshi_Resume.pdf"><button class="button-2"><i class="fa-solid fa-file-arrow-down"></i> Download Resume</button></a>
+                
+                </div>
+            </div>
+        </div>
+        <div class="visual-side">
+            <div class="profile-img"></div>
+            <div class="code-editor">
+                <div class="editor-header">
+                    <div class="editor-buttons">
+                        <div class="editor-btn btn-red"></div>
+                        <div class="editor-btn btn-yellow"></div>
+                        <div class="editor-btn btn-green"></div>
+                    </div>
+                    <div class="editor-title">portfolio.js</div>
+                </div>
+                 <div class="editor-content" id="editorContent">
+                    <div class="code-line"><span class="code-comment">// Anthony's Interactive Portfolio</span></div>
+                    <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">developer</span> = {</div>
+                    <div class="code-line">&nbsp;&nbsp;<span class="code-function">name</span>: <span class="code-string">"Anthony Bompetshi"</span>,</div>
+                    <div class="code-line">&nbsp;&nbsp;<span class="code-function">role</span>: <span class="code-string">"Web Developer"</span>,</div>
+                    <div class="code-line">&nbsp;&nbsp;<span class="code-function">skills</span>: [</div>
+                    <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"HTML5"</span>, <span class="code-string">"CSS3"</span>, <span class="code-string">"JavaScript"</span>,</div>
+                    <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string">"Responsive Design"</span>, <span class="code-string">"UI/UX"</span></div>
+                    <div class="code-line">&nbsp;&nbsp;],</div>
+                    <div class="code-line">&nbsp;&nbsp;<span class="code-function">projects</span>: <span class="code-number">12</span>,</div>
+                    <div class="code-line">};</div>
+                    <div class="code-line"></div>
+                    <div class="code-line"><span class="code-keyword">function</span> <span class="code-function">createPortfolio</span>() {</div>
+                    <div class="code-line">&nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-string">Innovative & user-focused websites</span>;</div>
+                    <div class="code-line">}</div>
+                    <div class="code-line"></div>
+                    <div class="code-line"><span class="code-keyword">class</span> <span class="code-function">FutureGoals</span> {</div>
+                    <div class="code-line">&nbsp;&nbsp;<span class="code-function">constructor</span>() {</div>
+                    <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.master = <span class="code-string">"Advanced JavaScript"</span>;</div>
+                    <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.learn = <span class="code-string">"React & Node.js"</span>;</div>
+                    <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">this</span>.build = <span class="code-string">"Complex web applications"</span>;</div>
+                    <div class="code-line">&nbsp;&nbsp;}</div>
+                    <div class="code-line">}</div>
+                    <div class="code-line"></div>
+                    <div class="code-line"><span class="code-comment">// Let's connect and build something amazing!</span><span class="typed-cursor">|</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+         
+    </header>
+
+
+</div>
+<section class="about-section" id="AB">
+    <div class="about-label">
+        <h2 >About <span class="animation-2">me</span></h2>
+       <div class="line"></div>
+    </div>
+    <div class="about-content" >     
+         <div class="me">
+             <div class="div1">
+                <h1><span class="animation">Introduction</span></h1>
+                <p>My name is Anthony Mboyo Bompetshi, 
+                    I’m a passionate and ambitious System Development student with a strong interest in building efficient, 
+                    user-friendly, and impactful software solutions. My journey into tech is driven by
+                     curiosity and the desire to solve real-world problems 
+                    through innovation and clean, scalable code. I aspire to grow into a versatile developer who not only understands
+                     system architecture and programming but also how technology can 
+                     transform businesses and improve lives. As I continue learning,
+                      I aim to specialize in creating reliable systems, exploring fields like artificial intelligence and cloud technologies,
+                     and eventually contributing to projects that make a meaningful difference on a global scale.
+                </p>
+                      
+             </div>
+              <div class="div2">
+                <img src="Styles/Images/me.png" alt="Anthony Mboyo Bompetshi">
+                <div class="image-blur">
+                    <div class="image-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Location:        Gauteng,South Africa</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Experience:       0 years</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-star"></i>
+                            <span>Specialization:       Java Dev</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Available for opportunities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div3">
+                <h1><span class="animation">Quick Stats</span></h1>
+                  <div class="stats-section">
+                                    <div class="stat">
+                                    <div class="stat-number" data-target="2">0</div>
+                                    <div class="stat-label">Languages</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number" data-target="12">0</div>
+                                <div class="stat-label">Projects</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number" data-target="3">0</div>
+                                <div class="stat-label">Years Coding</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number" data-target="1">0</div>
+                                <div class="stat-label">Certifications</div>
+                            </div>
+                        </div>
+                                  <span class="animation"><i class="fa-solid fa-code"></i></span> 
+                    
+            </div>
+         </div>
+    </div>
+</section>
+
+<section class="Skills-section" id="MS">
+    <div class="div4">
+         <div class="about-label">
+        <h2 >My <span class="animation-2">Skills</span></h2>
+       <div class="line"></div>
+    </div>
+
+                <div class="skills">
+                    <div class="skill">
+                        <i class="fa-brands fa-java"></i><br>
+                        <h6>Java</h6>
+                        <div class="progress-div">
+                            <progress value="70" max="100"></progress>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-laptop-code"></i><br>
+                        <h6>C++</h6>
+                         <div class="progress-div">
+                            <progress value="30" max="100"></progress>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-database"></i><br>
+                        <h6>SQL</h6>
+                         <div class="progress-div">
+                            <progress value="60" max="100"></progress>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-brands fa-html5"></i><br>
+                        <h6>HTML/CSS</h6>
+                         <div class="progress-div">
+                            <progress value="85" max="100"></progress>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <i class="fa-brands fa-js"></i><br>
+                        <h6>JavaScript</h6>
+                         <div class="progress-div">
+                            <progress value="20" max="100"></progress>
+                        </div>
+                    </div>
+                    <div class="skill">
+                    <i class="fa-solid fa-mobile"></i><br>
+                        <h6>System Design</h6>
+                         <div class="progress-div">
+                            <progress value="90" max="100"></progress>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="availability">
+                    <p><i class="fas fa-check-circle"></i> Available for internships and junior developer roles</p>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+      
+  <section class="project-section" id="PR">
+     <div class="div4">
+         <div class="project-label">
+        <h2 >My <span class="animation-2">Projects</span></h2>
+       <div class="line"></div>
+
+        <div class="container">
+                <div class="projects-carousel">
+                    <div class="carousel-container" id="carousel-container">
+                        <!-- Project 1 -->
+                        <div class="project-item">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="Styles/Images/4d5f3567627bc331bc0e7491d73c0229.jpg" alt="E-commerce Website">
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title"><span class="animation">Banking System</span></h3>
+                                    <p class="project-description">A Bank system that has deposit, withdraw and loan functions.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Java</span>
+                                        <span class="tech-tag">C++</span>
+    
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">Live Demo</a>
+                                        <a href="#" class="project-link">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 2 -->
+                        <div class="project-item">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="Styles/Images/Screenshot 2024-05-25 035037.png" alt="Task Management App">
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title"><span class="animation">Coffee Website</span></h3>
+                                    <p class="project-description">A coffee website with easy to use navigation and appealing user interface.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                        <span class="tech-tag">CSS3</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">Live Demo</a>
+                                        <a href="#" class="project-link">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 3 -->
+                        <div class="project-item">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="Styles/Images/e9b4a4326ab795abccd1d16f9a5d650f.jpg" alt="Analytics Dashboard">
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title"><span class="animation">Calculator</span></h3>
+                                    <p class="project-description">A simple calculator with all operations.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Java</span>
+                                        <span class="tech-tag">C++</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">Live Demo</a>
+                                        <a href="#" class="project-link">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 4 -->
+                        <div class="project-item">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Weather App">
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title"><span class="animation">Weather application</span></h3>
+                                    <p class="project-description">A weather forecasting app with location detection, 5-day forecasts, and severe weather alerts.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">JavaScript</span>
+                                        <span class="tech-tag">API</span>
+                                        <span class="tech-tag">Geolocation</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">Live Demo</a>
+                                        <a href="#" class="project-link">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 5 -->
+                        <div class="project-item">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="Styles/Images/c2814f832de058e5fe2b13830c3e527a.jpg" alt="Fitness Tracker">
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title"><span class="animation">Library Managemnt system</span></h3>
+                                    <p class="project-description">A Library Management system that is easy and accessible for user and admin to add,borrow or buy books.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Java</span>
+                                        <span class="tech-tag">MySQL</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">Live Demo</a>
+                                        <a href="#" class="project-link">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 6 -->
+                        <div class="project-item">
+                            <div class="project-card">
+                                <div class="project-image">
+                                    <img src="Styles/Images/Screenshot 2025-08-18 234709.png" alt="Portfolio Website">
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title"><span class="animation">Portfolio Website</span></h3>
+                                    <p class="project-description">A responsive portfolio website with smooth animations, project showcase, and contact form functionality.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">HTML/CSS</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">Live Demo</a>
+                                        <a href="#" class="project-link">GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation Arrows -->
+                    <div class="carousel-nav carousel-prev" id="prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="carousel-nav carousel-next" id="next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    
+                    <!-- Dots Indicator -->
+                    <div class="carousel-dots" id="carousel-dots">
+                        <!-- Dots will be generated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</section>
+
+
+<section class="journey-section" id="JY" >
+    <div class="div9">
+         <div class="section-title">
+        <h2 class="J">My <span class="animation-2">Journey</span></h2>
+       <div class="line" class="J"></div>
+    </div>
+
+    <div class="timeline">
+
+    <!-- Card 1 -->
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-file-code"></i></div>
+      <div class="timeline-card">
+        <h3><span class="animation">2021 - First Steps</span></h3>
+        <p>Started exploring programming with HTML and understanding the concepts behind website structure.</p>
+         <div class="project-tech">
+                                        <span class="tech-tag">HTML</span>
+                                    </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+      <div class="timeline-card">
+        <h3><span class="animation">2022 - First Projects</span> </h3>
+        <p>Built my first websites and personal projects, learning HTML, CSS, and JavaScript.</p>
+        <div class="project-tech">
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">CSS</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                    </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+      <div class="timeline-card">
+        <h3><span class="animation">2023 - Scholar</span></h3>
+        <p>Enrolled to study System Dev, learnt programming in c++, networks and web Development</p>
+        <div class="project-tech">
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">CSS</span>
+                                        <span class="tech-tag">C++</span>
+                                    </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-project-diagram"></i></div>
+      <div class="timeline-card">
+        <h3><span class="animation">2023/24 - Big Projects</span></h3>
+        <p>Built my first responsive website and banking system.</p>
+         <div class="project-tech">
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">CSS</span>
+                                        <span class="tech-tag">C++</span>
+                                    </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-rocket"></i></div>
+      <div class="timeline-card">
+        <h3><span class="animation">2025 - Today</span></h3>
+        <p>learning Java, building portfolios, and continuing to expand my skills 🚀.</p>
+        <div class="project-tech">
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">CSS</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                        <span class="tech-tag">Java</span>
+                                    </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+    <section class="contact-section" id="CX">
+    <div  class="section-title">
+        <h2 >Get In <span class="animation-2">Touch</span></h2>
+       <div class="line"></div>
+    </div>
+            <p class="section-subtitle">Have a project in mind or just want to say hello? I'd love to hear from you!</p>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-card">
+                    <h3><i class="fas fa-paper-plane"></i> Contact Info</h3>
+                    <div class="contact-detail" onclick="location.href='mailto:bompetshitony@gmail.com'">
+                        <i class="fas fa-envelope"></i>
+                        <span>bompetshitony@gmail.com</span>
+                    </div>
+                    <div class="contact-detail" onclick="location.href='tel:+2731753476'">
+                        <i class="fas fa-phone"></i>
+                        <span>073 175 3476</span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Gauteng, South Africa</span>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <h3><i class="fas fa-globe"></i> Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="https://wa.me/27731753476" class="social-link" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/A3n7h0ny" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com/its.juss_tony" class="social-link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <div class="form-card">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </div>
+            </div>
+        </div>
+ 
+</section>
+
+<section class="footer">
+    <div class="footer-content">
+        <h3><span class="animation"><i class="fa-solid fa-crown fa-sm"></i>AB.<span></span></h3>
+        <p>Building futures with logic, creativity, and code.</p>
+        <P>Follow me on my socials</P>
+        <ul class="socials">
+            <li><a href="https://tiktok.com/@its.juss_tony" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a href="https://instagram.com/its.juss_tony" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+            <li><a href="https://wa.me/27731753476" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="https://github.com/A3n7h0ny" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://youtube.com/@tonybompetshi2329" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <P>copyright &copy;Portfolio. designed by <span class="animation-3">Anthony Bompetshi</span></P>
+    </div>
+</section>
+<script src="portfilioJS.js"></script>
+</body>
+</html>
